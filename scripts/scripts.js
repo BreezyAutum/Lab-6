@@ -10,7 +10,7 @@ You are encouraged to use the provided naming convention for ease of review.
 /* create variables to hold the values for modelName and duration */
 
 // INSERT YOUR CODE HERE
-let modelName = 7
+let modelName = "XYZ"
 let duration = 7
 /****************** helper function ******************/
 /* create a function called recalculate() which will
@@ -27,14 +27,12 @@ let duration = 7
 function Recalculate(){
      let costLabel = document.getElementById("calculated-cost");
      if (modelName === "Model XYZ"){ 
-        costLabel += 100;
-     }
+        let totalCost = duration * 100;  
+    } else if (modelName === "Model CPRG"){
+        let totalCost = duration * 213;
+    }
+    document.getElementById(calculated-cost).innerHTML(totalCost);
 }
-
-
-
-
-
 /****************** model button logic ******************/
 
 /* 
@@ -45,12 +43,18 @@ function Recalculate(){
     - if modelName is currently "CPRG", change the value of modelName to "XYZ", and change the innerHTML of the model-text span element to "Model XYZ"
     - then, recalculate() the total cost.
 - finally, uncomment the following line of JavaScript to have this function run automatically whenever the pseudo-button is clicked: */
-    // modelButton.addEventListener("click", changeModel);
+modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 let switchModel = document.getElementByI("model-button");
-function ChangeMode(){
-
+function changeModel(){
+    let modelText = document.getElementById("model-text")
+    if (modelText === "Model XYZ"){
+        modelText = document.getElementById("model-text)".innerHTML("Model CPRG")
+    } else if (modelText === "Model CPRG"){
+        modelText = document.getElementById("Model XYZ").innerHTML("Model XYZ")
+    }
+    recalculate();
 }
 
 
