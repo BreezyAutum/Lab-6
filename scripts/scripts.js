@@ -75,8 +75,7 @@ const durationButton = document.getElementById("duration-button");
 durationButton.addEventListener("click", changeDuration);
 function changeDuration(){
     let durationText = document.getElementById("duration-text");
-    let newDuration = prompt("Enter the new duration: ");
-    duration = Number(newDuration);
+    let duration = prompt("Enter the new duration: ");
     durationText.innerHTML = duration;
     recalculate();
 }
