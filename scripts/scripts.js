@@ -10,8 +10,8 @@ You are encouraged to use the provided naming convention for ease of review.
 /* create variables to hold the values for modelName and duration */
 
 // INSERT YOUR CODE HERE
-let modelName = "XYZ"
-let duration = 7
+let modelName = "XYZ";
+let duration = 7;
 /****************** helper function ******************/
 /* create a function called recalculate() which will
     - create a variable to represent the calculated-cost span element. That will look something like:
@@ -45,7 +45,6 @@ function recalculate(){
 - finally, uncomment the following line of JavaScript to have this function run automatically whenever the pseudo-button is clicked: */
 
 // INSERT YOUR CODE HERE
-let switchModel = document.getElementById("model-button");
 function changeModel(){
     let modelText = document.getElementById("model-text");
     if (modelName === "XYZ"){
